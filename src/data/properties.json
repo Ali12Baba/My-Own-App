@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "sellrent":1,
+      "name": "Demo",
+      "type": "Any for now",
+      "price":26
+    },
+    {
+      "id": 2,
+      "sellrent":2,
+      "name": "Demo 2",
+      "type": "Any for now 2",
+      "price":23,
+      "image":"image-2"
+    },
+    {
+      "id": 1,
+      "sellrent":1,
+      "name": "Demo 3 ",
+      "type": "Any for now three",
+      "price":27,
+      "image":"image-3"
+    },
+    {
+      "id": 4,
+      "SellRent":2,
+      "name": "Demo four ",
+      "type": "Any for now",
+      "price":27,
+      "image":"image-4"
+    }
+  ]

@@ -1,5 +1,10 @@
+import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
+import { AddPropertyComponent } from './property/add-property/add-property.component';
+import { HousingService } from './services/housing.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,17 +13,23 @@ import { PropertyListComponent } from './property/property-list/property-list.co
 import { NavebarComponent } from './navebar/navebar.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     PropertyCardComponent,
     PropertyListComponent,
-      NavebarComponent
+    NavebarComponent,
+    AddPropertyComponent,
+    PropertyDetailComponent
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    HousingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
